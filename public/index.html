@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tProxy</title>
+  <title>Poxy</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
@@ -40,64 +40,37 @@
       background-color: transparent;
       cursor: pointer;
     }
-    .links {
-      margin-top: 20px;
-      margin-left: 80px;
-    }
-    .links a {
-      margin-right: 80px;
-    }
   </style>
 </head>
 <body>
-  <h1>tProxy v2</h1>
+  <h1>Shi Zhao Like 超能力</h1>
   <div id="haha"></div>
 
   <div class="search-container">
-    <input type="text" placeholder="Enter URL and hit the icon on the right..." maxlength="50">
+    <input type="text" placeholder="Enter your URL" maxlength="50">
     <div class="search-icon">
       <i class="fas fa-search" onclick="getSite()"></i>
     </div>
   </div>
 
-  <div class="links">
-    <a href="stargazers.html">Stargazers</a>
-    <a href="https://github.com/SevenworksDev/tProxy">GitHub + Setup tProxy for your own</a>
-    <a href="https://sevenworks.eu.org">More Projects</a>
-  </div>
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <script>
     var haha = document.getElementById("haha");
 
     function lmao(){
       var lol = [
-        'Super cool site that displays sites!',
-        'Bypassing web filters since a long time ago.',
-        'TitaniumNetwork sucks, cry about it.',
-        'Do your homework.',
-        'Too slow? Host it yourself instead of complaining non-stop about your issues.',
-        'The voices in my head told me to finish this site.',
-        'Breaking every bone in your body since 1979.',
-        'If you see ads on this site, this idiot is making money off my stuff.',
-        'how do i type',
-        'What do I even put here?',
-        'yoooooooooooooooooooo!',
-        'tProxy for dummies: Type in a URL below to access it.',
-        'Dear Teachers, This is TOTALLY a learning resource.',
-        'I got in trouble for this once.',
-        'Always check if a school chrome extension has a privacy policy, If not then you can punch your school administrators multiple times.',
-        'Cookie Clicker is useless, stop playing it.',
-        'How did this blow up again?',
-        'Submit an issue on GitHub if something broke in tProxy. (If a website being used via tProxy breaks, not our problem)',
-        'Do people use this anymore?',
-        '*cricket noises*'
+        // Your array of messages
       ];
 
       var hehe = Math.floor(Math.random() * lol.length);
       haha.textContent = lol[hehe];
     }
 
-    lmao()
+    lmao();
 
     function getSite() {
       let inputValue = document.querySelector('input').value;
